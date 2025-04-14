@@ -1,0 +1,44 @@
+.cd-container {
+    padding: 24px;
+    background-color: #f7faff;
+    font-family: Arial, sans-serif;
+  }
+  
+  .cd-heading {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 24px;
+    color: #0d47a1;
+  }
+  
+  .cd-campaign-card {
+    background-color: white;
+    padding: 16px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .cd-campaign-title {
+    font-size: 24px;
+    color: #1565c0;
+    margin-bottom: 12px;
+  }
+  
+  .cd-table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .cd-table th,
+  .cd-table td {
+    padding: 12px;
+    border: 1px solid #ccc;
+    text-align: left;
+  }
+  
+  .cd-table th {
+    background-color: #e3f2fd;
+    font-weight: bold;
+  }
+  
