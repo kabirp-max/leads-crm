@@ -2,6 +2,7 @@ import React from "react";
 import { useNavigate } from "react-router-dom";
 
 export default function Header() {
+    return
   const email = localStorage.getItem("userEmail");
   const token = localStorage.getItem("authToken");
   const navigate = useNavigate();

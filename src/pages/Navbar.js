@@ -5,11 +5,11 @@ import "./Navbar.css";
 
 export default function Navbar() {
   const navigate = useNavigate();
-  const user = JSON.parse(localStorage.getItem("user"));
+  const user = localStorage.getItem("userEmail");
 
   const handleLogout = () => {
-    localStorage.removeItem("token");
-    localStorage.removeItem("user");
+    localStorage.removeItem("authToken");
+    localStorage.removeItem("userEmail");
     navigate("/login");
   };
 
@@ -36,7 +36,7 @@ export default function Navbar() {
       {user && (
         <div className="navbar-right">
           <span className="nav-user">
-            👋 {user.name} ({user.role.toUpperCase()})
+            👋 {user.name} {user.split("@")[0].toUpperCase()}
           </span>
           <button className="logout-button" onClick={handleLogout}>
             Logout
